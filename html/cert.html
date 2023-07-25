@@ -1,0 +1,118 @@
+<form action="<?= $submiturl ?>" method="POST">
+    <input type="hidden" id="id" name="id" value="<?= $Id ?>">
+    <input type="hidden" id="action" name="action" value="<?= $Action ?>">
+    <label for="InputISIN" class="col-sm-2 col-form-label">ISIN</label>
+    <div class="input-group mb-3">
+       <!-- <div class="col-sm-10">//-->
+            <input type="text" class="form-control" id="Isin" name ="Isin" aria-describedby="IsinHelp" maxlength="12" placeholder="ISIN Certificato" value="<?= $Isin ?>">
+      <!--  </div>//-->
+    </div>
+
+    <label for="Emittente" class="col-sm-2 col-form-label">Emittente</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="Emittente" name="Emittente" placeholder="Emittente" value="<?= $Emittente ?>">
+    </div>
+
+    <label for="DataAcquisto" class="col-sm-2 col-form-label">Data Acquisto</label>
+    <div class="input-group mb-3">
+        <input type="date" class="form-control" id="DataAcquisto" name="DataAcquisto" placeholder="" value="<?= $DataAcquisto ?>">
+    </div>
+
+    <label for="DataScadenza" class="col-sm-2 col-form-label">Data Scadenza</label>
+    <div class="input-group mb-3">
+        <input type="date" class="form-control" id="DataScadenza" name="DataScadenza" placeholder="" value="<?= $DataScadenza ?>">
+    </div>
+
+    <label for="PrezzoAcquisto" class="col-sm-2 col-form-label">Prezzo Acquisto</label>
+    <div class="input-group mb-3">
+        <span class="input-number input-number-currency">
+            <input type="number" class="form-control input-number-currency" id="PrezzoAcquisto" name="PrezzoAcquisto" min="0" max="15000" step="0.01" placeholder="0,00" value="<?= $PrezzoAcquisto ?>">
+        </span>
+    </div>
+
+    <label for="GiornoCedola" class="col-sm-2 col-form-label">Giorno Cedola</label>
+    <div class="input-group mb-3">
+        <input type="number" class="form-control" id="GiornoCedola" name="GiornoCedola" placeholder="" min="0" max="31" value="<?= $GiornoCedola ?>">
+    </div>
+
+    <label for="PercentualeCedola" class="col-sm-2 col-form-label">Percentuale Cedola</label>
+    <div class="input-group mb-3">
+        <div class="col-sm-10">
+            <input type="number" class="form-control input-number-percentage" id="PercentualeCedola" name="PercentualeCedola" min="0,00001" max="100" placeholder="" value="<?= $PercentualeCedola ?>">
+        </div>
+    </div>
+
+    <label for="Barriera" class="col-sm-2 col-form-label">Barriera</label>
+    <div class="input-group mb-3">
+        <div class="col-sm-10">
+            <input type="text" class="form-control input-number-percentage" id="Barriera" name="Barriera" min="0" max="100" placeholder="" value="<?= $Barriera ?>">
+        </div>
+    </div>
+
+    <label for="IsinSottostante1"  class="col-sm-2 col-form-label">Sottostante 1 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante1" name="IsinSottostante1" placeholder="ISIN Sottostante" value="<?= $IsinSottostante1 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante1" name="StrikeSottostante1" placeholder="Strike Sottostante" value="<?= $StrikeSottostante1 ?>">
+    </div>
+
+    <label for="IsinSottostante2"  class="col-sm-2 col-form-label">Sottostante 2 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante2" name="IsinSottostante2" placeholder="ISIN Sottostante" value="<?= $IsinSottostante2 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante2" name="StrikeSottostante2" placeholder="Strike Sottostante" value="<?= $StrikeSottostante2 ?>">
+    </div>
+
+    <label for="IsinSottostante3"  class="col-sm-2 col-form-label">Sottostante 3 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante3" name="IsinSottostante3" placeholder="ISIN Sottostante" value="<?= $IsinSottostante3 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante3" name="StrikeSottostante3" placeholder="Strike Sottostante" value="<?= $StrikeSottostante3 ?>">
+    </div>
+
+    <label for="IsinSottostante4"  class="col-sm-2 col-form-label">Sottostante 4 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante4" name="IsinSottostante4" placeholder="ISIN Sottostante" value="<?= $IsinSottostante4 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante4" name="StrikeSottostante4" placeholder="Strike Sottostante" value="<?= $StrikeSottostante4 ?>">
+    </div>
+
+    <label for="IsinSottostante5"  class="col-sm-2 col-form-label">Sottostante 5 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante5" name="IsinSottostante5" placeholder="ISIN Sottostante" value="<?= $IsinSottostante5 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante5" name="StrikeSottostante5" placeholder="Strike Sottostante" value="<?= $StrikeSottostante5 ?>">
+    </div>
+
+    <label for="IsinSottostante6"  class="col-sm-2 col-form-label">Sottostante 6 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante6" name="IsinSottostante6"placeholder="ISIN Sottostante" value="<?= $IsinSottostante6 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante6" name="StrikeSottostante6" placeholder="Strike Sottostante" value="<?= $StrikeSottostante6 ?>">
+    </div>
+
+    <label for="IsinSottostante7"  class="col-sm-2 col-form-label">Sottostante 7 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante7" name="IsinSottostante7" placeholder="ISIN Sottostante" value="<?= $IsinSottostante7 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante7" name="StrikeSottostante7" placeholder="Strike Sottostante" value="<?= $StrikeSottostante7 ?>">
+    </div>
+
+    <label for="IsinSottostante8"  class="col-sm-2 col-form-label">Sottostante 8 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante8" name="IsinSottostante8" placeholder="ISIN Sottostante" value="<?= $IsinSottostante8 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante8" name="StrikeSottostante8" placeholder="Strike Sottostante" value="<?= $StrikeSottostante8 ?>">
+    </div>
+
+    <label for="IsinSottostante9"  class="col-sm-2 col-form-label">Sottostante 9 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante9" name="IsinSottostante9" placeholder="ISIN Sottostante" value="<?= $IsinSottostante9 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante9" name="StrikeSottostante9" placeholder="Strike Sottostante" value="<?= $StrikeSottostante9 ?>">
+    </div>
+
+    <label for="IsinSottostante10"  class="col-sm-2 col-form-label">Sottostante 10 (ISIN/Strike)</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="IsinSottostante10" name="IsinSottostante10" placeholder="ISIN Sottostante" value="<?= $IsinSottostante10 ?>">
+        <input type="number" class="form-control input-number-currency" min="0" max="15000" step="0,01" id="StrikeSottostante10" name="StrikeSottostante10" placeholder="Strike Sottostante" value="<?= $StrikeSottostante10 ?>">
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+</form>
