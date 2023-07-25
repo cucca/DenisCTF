@@ -2,10 +2,10 @@
 
 $config = [
     'db_engine'   => 'mysql',
-    'db_host'     => '192.168.1.45',
+    'db_host'     => '192.168.x.x',
     'db_name'     => 'certificates',
     'db_user'     => 'root',
-    'db_password' => 'k3oth4mc',
+    'db_password' => 'xxxxx',
     'ROOT_URL'    => '/cert/',
     'ROOT_DIR'    => '/var/www/html/cert/',
 ];
